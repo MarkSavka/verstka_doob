@@ -11,7 +11,7 @@ body{
 }
 .wrapper{
     display: grid;
-    background-image: url(./Doob_2.png);
+    background-image: url(./img/Doob_2.png);
     background-repeat: repeat-y;
     background-size: 100%;
 
@@ -149,7 +149,7 @@ body{
 
     .img_hero_ilustration{
         grid-area: 2 / 5 / span 1 / span 4;
-        background-image: url(./Hero_ilustration.png);
+        background-image: url(./img/Hero_ilustration.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
