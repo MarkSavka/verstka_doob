@@ -11,16 +11,16 @@
     <div class="wrapper">
 
             
-        <div class="logo">
+        <div class="logo" id="home">
             <p>Doob</p>
         </div>
     
         <ul>
-            <li>Home</li>
-            <li>About us</li>
-            <li>Portfolio</li>
-            <li>Blog</li>
-            <li>Contact us</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about_us">About us</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact_us">Contact us</a></li>
         </ul>
 
         <div class="contact_us">
@@ -56,7 +56,7 @@
                 <p>Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
             </div>
             <div class="service_child">
-                <img src="./Icon_2.png" alt="" height="55px">
+                <img src="./img/Icon_2.png" alt="" height="55px">
                 <p>Web & Graphic Design</p>
                     <br>
                 <p>Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
@@ -65,7 +65,7 @@
 
 <!-- ! //////////////////////////////////////////////////////////////////////// -->
 
-        <div class="about_img">
+        <div id="about_us" class="about_img">
             <img src="./img/About_ilustration.png" alt="About_ilustration">
         </div>
         <div class="about_title">
@@ -80,7 +80,7 @@
 
 <!-- ! //////////////////////////////////////////////////////////////////////// -->
 
-        <div class="portfolio">
+        <div id="portfolio" class="portfolio">
             <div class="text">
                 <p>See some of our <br>
                     Creative work.</p>
@@ -104,7 +104,7 @@
 
 <!-- ! //////////////////////////////////////////////////////////////////////// -->
 
-        <div class="blog">
+        <div id="blog" class="blog">
             <div class="text">
                 <div>
                     <p>BLOG STORIES</p><br>
@@ -145,7 +145,7 @@
 
 <!-- ! //////////////////////////////////////////////////////////////////////// -->
 
-        <div class="contact">
+        <div id="contact_us" class="contact">
             <div class="title">
                 <p>CONTACT US</p>
                 <p>Get in Touch</p>
@@ -155,7 +155,7 @@
                     <input type="text" placeholder="Email" />
                     <input type="text" placeholder="Subject" />
                     <textarea name="message" cols="30" rows="10" placeholder="Message Here"></textarea>
-                    <input type="button" value="Send message"/>
+                    <input type="button" onClick="window.location.reload()" value="Send message"/>
                 </fieldset>
             </form>
         </div>
@@ -166,17 +166,19 @@
             <p>DOOB</p>
             <h1>CREATIVITY ABOVE</h1>
             <ul>
-                <li>Home.</li>
-                <li>About us.</li>
-                <li>Postfolio.</li>
-                <li>Blog.</li>
-                <li>Contact us.</li>
+                <ul>
+                    <li><a href="#home">Home.</a></li>
+                    <li><a href="#about_us">About us.</a></li>
+                    <li><a href="#portfolio">Portfolio.</a></li>
+                    <li><a href="#blog">Blog.</a></li>
+                    <li><a href="#contact_us">Contact us.</a></li>
+                </ul>
             </ul>
             <p> © 2019 - Doob,All Right Reserved</p>
             <ul>
-                <li><img src="./img/facebook-app-symbol.svg" alt="facebook" height="40px"></li>
-                <li><img src="./img/twitter.svg" alt="twitter" height="40px"></li>
-                <li><img src="./img/dribble.svg" alt="dribble" height="40px"></li>
+                <li><a href="https://facebook.com"><img src="./img/facebook-app-symbol.svg" alt="facebook" height="40px"></a></li>
+                <li><a href="https://twitter.com"><img src="./img/twitter.svg" alt="twitter" height="40px"></a></li>
+                <li><a href="https://dribble.com"><img src="./img/dribble.svg" alt="dribble" height="40px"></a></li>
             </ul>
         </footer>
 

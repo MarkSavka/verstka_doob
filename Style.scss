@@ -1,4 +1,4 @@
-*{padding: 0;margin: 0;z-index: -1;}
+*{padding: 0;margin: 0;}
 body{
     background-color: #fff;
     min-width: 1200px;
@@ -11,7 +11,7 @@ body{
 }
 .wrapper{
     display: grid;
-    background-image: url(./img/Doob_2.png);
+    // background-image: url(./img/Doob_2.png);
     background-repeat: repeat-y;
     background-size: 100%;
 
@@ -52,8 +52,21 @@ body{
             display: inline;
             font-size: 1.1em;
 
+            a{
+                text-decoration: none;
+            }
+            
             &::after{
                 content: ".";
+            }
+            &:hover{
+                transform: rotate(360deg) scale(1.8) translateY(-1px);
+                cursor: pointer;
+                transition: .7s;
+            }
+            a::selection{
+                background-color: black;
+                color: white;
             }
         }
     }
@@ -81,6 +94,8 @@ body{
         }
         
         .button_contact_us{
+            transition: 1s;
+
             border: none;
             width: 200px;
             height: 60px;
@@ -93,12 +108,18 @@ body{
             align-items: center;
             justify-content: center;
 
+            
             &::after{
                 content: "→";
                 font-size: 1.9em;
-
+                
                 text-align: center;
                 vertical-align: super;
+            }
+            
+            &:hover{
+                background-color: #FF4359;
+                color: white;
             }
         }
     }
@@ -115,14 +136,25 @@ body{
             text-align: unset;
             font-family: 'Lato', sans-serif;
             margin: 10px 0;
+
         }
         p:nth-child(1){
             font-size: 5em;
             color: #464e90 ;
+
+            &::selection{
+                background-color: #464e90;
+                color: white;
+            }
         }
         p:nth-child(3){
             font-size: 0.9em;
             color: grey;
+
+            &::selection{
+                background-color: grey;
+                color: white;
+            }
         }
 
         div{
@@ -139,10 +171,22 @@ body{
             button:nth-child(1){
                 background-color: #ff4359;
                 color: white;
+
+                &:hover{
+                    transform: translateY(-10px);
+                    box-shadow: 1px 5px 8px 5px grey;
+                    transition: .8s;
+                }
             }
             button:nth-child(2){
                 background-color: initial;
                 color: #464e90 ;
+
+                &:hover{
+                    transform: translateY(-10px);
+                    box-shadow: 1px 5px 8px 5px grey;
+                    transition: .8s;
+                }
             }
         }
     }
@@ -178,6 +222,11 @@ body{
                 font-size: 3em;
                 font-family: 'Lato', sans-serif;
                 color: #464e90;
+
+                &::selection{
+                    background-color: #464e90;
+                    color: white;
+                }
             }
             button{
                 font-size: 1.3em;
@@ -187,6 +236,12 @@ body{
                 color: white;
                 margin: 20px 0;
                 background-color: #ff4359;
+
+                &:hover{
+                    transform: translateY(-10px);
+                    box-shadow: 1px 5px 8px 5px grey;
+                    transition: .8s;
+                }
             }
         }
         .service_child{
@@ -196,19 +251,32 @@ body{
             margin: 25px;
             font-family: 'Lato', sans-serif;
 
+            
+
             img{
                 margin: 10px 20px 40px 40px;
             }
 
+            
             p:nth-child(2){
                 font-size: 2em;
                 
                 color: #464e90;
+
+                &::selection{
+                    background-color: #464e90;
+                    color: white;
+                }
             }
             p:nth-child(4){
                 font-size: 1em;
                 color: grey;
                 text-align: start;
+
+                &::selection{
+                    background-color: grey;
+                    color: white;
+                }
             }
         }
     }
@@ -237,14 +305,29 @@ body{
         p:nth-child(1){
             color: #ff4359;
             font-size: 1em;
+
+            &::selection{
+                background-color: #ff4359;
+                color: white;
+            }
         }
         p:nth-child(3){
             color: #464e90;
             font-size: 4em;
+
+            &::selection{
+                background-color: #464e90;
+                color: white;
+            }
         }
         p:nth-child(5){
             color: #464e90;
             font-size: 1.2em;
+
+            &::selection{
+                background-color: #464e90;
+                color: white;
+            }
         }
     }
     .portfolio{
@@ -260,6 +343,11 @@ body{
             p{
                 color: #464e90;
                 font-size: 2.8em;
+
+                &::selection{
+                    background-color: #464e90;
+                    color: white;
+                }
             }
             div{
                 display: flex;
@@ -277,6 +365,11 @@ body{
                 font-size: 1.9em;
                 text-align: center;
                 margin: 40px;
+
+                &::selection{
+                    background-color: red;
+                    color: white;
+                }
             }
         }
         .img{
@@ -301,16 +394,25 @@ body{
         .text{
             display: flex;
             justify-content: space-between;
-            //align-items: center;
 
             div{
                 p:nth-child(1){
                     font-size: 1.3em;
                     color: red;
+
+                    &::selection{
+                        background-color: red;
+                        color: white;
+                    }
                 }
                 p:nth-child(3){
                     font-size: 3.7em;
                     color: #464e90;
+
+                    &::selection{
+                        background-color: #464e90;
+                        color: white;
+                    }
                 }
             }
             .arrow{
@@ -337,9 +439,19 @@ body{
                 color: #464E90;
                 background-color: #fff;
 
+                p::selection{
+                    background-color: #464e90;
+                    color: white;
+                }
+
                 &:nth-child(1){
                     color: white;
                     background-color: #ff3946;
+
+                    p::selection{
+                        background-color: #fff;
+                        color: #ff3946;
+                    }
                 }
 
                 p{
@@ -375,11 +487,21 @@ body{
                 &:nth-child(1){
                     color: #ff3946;;
                     font-size: 1.35em;
+
+                    &::selection{
+                        background-color: #ff3946;
+                        color: white;
+                    }
                 }
                 &:nth-child(2){
                     color: #314584;
                     font-size: 3.8em;
                     margin: 20px 0;
+
+                    &::selection{
+                        background-color: #464e90;
+                        color: white;
+                    }
                 }
             }
         }
@@ -419,6 +541,12 @@ body{
                         border-radius: 30px;
                         color: white;
                         font-size: 1.2em;
+
+                        &:hover{
+                            transform: translateY(-10px);
+                            box-shadow: 1px 5px 8px 5px grey;
+                            transition: .8s;
+                        }
                     }
 
                 }
@@ -446,13 +574,20 @@ body{
         padding: 40px;
 
         p{
-
             margin: 20px;
+            &::selection{
+                background-color: white;
+                color: #314584;
+            }
         }
         h1{
             font-size: 3.4em;
             color: #ff4359;
             margin: 20px;
+            &::selection{
+                background-color: #ff4359;
+                color: #324584;
+            }
         }
         ul{
             display: inline-flex;
@@ -460,6 +595,25 @@ body{
             margin: 10px;
 
             li{
+                a{
+                    text-decoration: none;
+                    color: white;
+                    
+                    &:active{
+                        color: white;
+                    }
+                    &:link{
+                        color: white;
+                    }
+                    &:visited{
+                        color: white;
+                    }
+                    
+                }
+                &:hover{
+                    transform: scale(1.4);
+                }
+                
                 &:after{
                     content: '';
                 }

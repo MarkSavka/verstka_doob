@@ -1,8 +1,7 @@
 @charset "UTF-8";
 * {
   padding: 0;
-  margin: 0;
-  z-index: -1; }
+  margin: 0; }
 
 body {
   background-color: #fff;
@@ -14,7 +13,6 @@ body {
 
 .wrapper {
   display: grid;
-  background-image: url(./img/Doob_2.png);
   background-repeat: repeat-y;
   background-size: 100%;
   font-family: 'Lato', sans-serif;
@@ -41,8 +39,17 @@ body {
       margin-right: 60px;
       display: inline;
       font-size: 1.1em; }
+      .wrapper ul li a {
+        text-decoration: none; }
       .wrapper ul li::after {
         content: "."; }
+      .wrapper ul li:hover {
+        transform: rotate(360deg) scale(1.8) translateY(-1px);
+        cursor: pointer;
+        transition: .7s; }
+      .wrapper ul li a::selection {
+        background-color: black;
+        color: white; }
   .wrapper .contact_us {
     grid-area: 1/6/span 1/span 2;
     display: flex;
@@ -57,6 +64,7 @@ body {
         transform: rotate(90deg);
         width: 20px; }
     .wrapper .contact_us .button_contact_us {
+      transition: 1s;
       border: none;
       width: 200px;
       height: 60px;
@@ -72,6 +80,9 @@ body {
         font-size: 1.9em;
         text-align: center;
         vertical-align: super; }
+      .wrapper .contact_us .button_contact_us:hover {
+        background-color: #FF4359;
+        color: white; }
   .wrapper .hero_title {
     grid-area: 2 / 2 / span 1 / span 3;
     display: inline-flex;
@@ -85,9 +96,15 @@ body {
     .wrapper .hero_title p:nth-child(1) {
       font-size: 5em;
       color: #464e90; }
+      .wrapper .hero_title p:nth-child(1)::selection {
+        background-color: #464e90;
+        color: white; }
     .wrapper .hero_title p:nth-child(3) {
       font-size: 0.9em;
       color: grey; }
+      .wrapper .hero_title p:nth-child(3)::selection {
+        background-color: grey;
+        color: white; }
     .wrapper .hero_title div {
       width: 100%;
       margin: 20px 0; }
@@ -99,9 +116,17 @@ body {
       .wrapper .hero_title div button:nth-child(1) {
         background-color: #ff4359;
         color: white; }
+        .wrapper .hero_title div button:nth-child(1):hover {
+          transform: translateY(-10px);
+          box-shadow: 1px 5px 8px 5px grey;
+          transition: .8s; }
       .wrapper .hero_title div button:nth-child(2) {
         background-color: initial;
         color: #464e90; }
+        .wrapper .hero_title div button:nth-child(2):hover {
+          transform: translateY(-10px);
+          box-shadow: 1px 5px 8px 5px grey;
+          transition: .8s; }
   .wrapper .img_hero_ilustration {
     grid-area: 2 / 5 / span 1 / span 4;
     background-image: url(./img/Hero_ilustration.png);
@@ -125,6 +150,9 @@ body {
         font-size: 3em;
         font-family: 'Lato', sans-serif;
         color: #464e90; }
+        .wrapper .service .title p::selection {
+          background-color: #464e90;
+          color: white; }
       .wrapper .service .title button {
         font-size: 1.3em;
         border: none;
@@ -133,6 +161,10 @@ body {
         color: white;
         margin: 20px 0;
         background-color: #ff4359; }
+        .wrapper .service .title button:hover {
+          transform: translateY(-10px);
+          box-shadow: 1px 5px 8px 5px grey;
+          transition: .8s; }
     .wrapper .service .service_child {
       max-width: 320px;
       box-shadow: 3px 6px 13px 1px grey;
@@ -144,10 +176,16 @@ body {
       .wrapper .service .service_child p:nth-child(2) {
         font-size: 2em;
         color: #464e90; }
+        .wrapper .service .service_child p:nth-child(2)::selection {
+          background-color: #464e90;
+          color: white; }
       .wrapper .service .service_child p:nth-child(4) {
         font-size: 1em;
         color: grey;
         text-align: start; }
+        .wrapper .service .service_child p:nth-child(4)::selection {
+          background-color: grey;
+          color: white; }
   .wrapper .about_img {
     grid-area: 4 / 1 / span 1 / span 4;
     display: flex;
@@ -166,12 +204,21 @@ body {
     .wrapper .about_title p:nth-child(1) {
       color: #ff4359;
       font-size: 1em; }
+      .wrapper .about_title p:nth-child(1)::selection {
+        background-color: #ff4359;
+        color: white; }
     .wrapper .about_title p:nth-child(3) {
       color: #464e90;
       font-size: 4em; }
+      .wrapper .about_title p:nth-child(3)::selection {
+        background-color: #464e90;
+        color: white; }
     .wrapper .about_title p:nth-child(5) {
       color: #464e90;
       font-size: 1.2em; }
+      .wrapper .about_title p:nth-child(5)::selection {
+        background-color: #464e90;
+        color: white; }
   .wrapper .portfolio {
     grid-area: 5 / 2 / span 1 / span 6;
     display: flex;
@@ -182,6 +229,9 @@ body {
       .wrapper .portfolio .text p {
         color: #464e90;
         font-size: 2.8em; }
+        .wrapper .portfolio .text p::selection {
+          background-color: #464e90;
+          color: white; }
       .wrapper .portfolio .text div {
         display: flex;
         align-items: center; }
@@ -192,6 +242,9 @@ body {
       font-size: 1.9em;
       text-align: center;
       margin: 40px; }
+      .wrapper .portfolio .text_footer P::selection {
+        background-color: red;
+        color: white; }
     .wrapper .portfolio .img {
       display: flex;
       flex-flow: wrap row;
@@ -212,9 +265,15 @@ body {
       .wrapper .blog .text div p:nth-child(1) {
         font-size: 1.3em;
         color: red; }
+        .wrapper .blog .text div p:nth-child(1)::selection {
+          background-color: red;
+          color: white; }
       .wrapper .blog .text div p:nth-child(3) {
         font-size: 3.7em;
         color: #464e90; }
+        .wrapper .blog .text div p:nth-child(3)::selection {
+          background-color: #464e90;
+          color: white; }
       .wrapper .blog .text .arrow {
         display: flex;
         align-items: center; }
@@ -232,9 +291,15 @@ body {
         margin: 0 20px;
         color: #464E90;
         background-color: #fff; }
+        .wrapper .blog .posts .post p::selection {
+          background-color: #464e90;
+          color: white; }
         .wrapper .blog .posts .post:nth-child(1) {
           color: white;
           background-color: #ff3946; }
+          .wrapper .blog .posts .post:nth-child(1) p::selection {
+            background-color: #fff;
+            color: #ff3946; }
         .wrapper .blog .posts .post p {
           margin: 15px;
           margin-bottom: 25px; }
@@ -254,10 +319,16 @@ body {
     .wrapper .contact .title p:nth-child(1) {
       color: #ff3946;
       font-size: 1.35em; }
+      .wrapper .contact .title p:nth-child(1)::selection {
+        background-color: #ff3946;
+        color: white; }
     .wrapper .contact .title p:nth-child(2) {
       color: #314584;
       font-size: 3.8em;
       margin: 20px 0; }
+      .wrapper .contact .title p:nth-child(2)::selection {
+        background-color: #464e90;
+        color: white; }
     .wrapper .contact form fieldset {
       border: none;
       display: grid;
@@ -284,6 +355,10 @@ body {
           border-radius: 30px;
           color: white;
           font-size: 1.2em; }
+          .wrapper .contact form fieldset input:nth-child(4):hover {
+            transform: translateY(-10px);
+            box-shadow: 1px 5px 8px 5px grey;
+            transition: .8s; }
       .wrapper .contact form fieldset textarea {
         grid-area: 2 / 1 / span 1 / span 3;
         width: 1170px;
@@ -301,14 +376,31 @@ body {
     padding: 40px; }
     .wrapper footer p {
       margin: 20px; }
+      .wrapper footer p::selection {
+        background-color: white;
+        color: #314584; }
     .wrapper footer h1 {
       font-size: 3.4em;
       color: #ff4359;
       margin: 20px; }
+      .wrapper footer h1::selection {
+        background-color: #ff4359;
+        color: #324584; }
     .wrapper footer ul {
       display: inline-flex;
       justify-content: space-between;
       margin: 10px; }
+      .wrapper footer ul li a {
+        text-decoration: none;
+        color: white; }
+        .wrapper footer ul li a:active {
+          color: white; }
+        .wrapper footer ul li a:link {
+          color: white; }
+        .wrapper footer ul li a:visited {
+          color: white; }
+      .wrapper footer ul li:hover {
+        transform: scale(1.4); }
       .wrapper footer ul li:after {
         content: ''; }
 
