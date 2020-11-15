@@ -40,7 +40,7 @@ body{
 
     }
 
-    ul{
+    .header_ul{
         display: flex;
 
         justify-content: start;
@@ -54,10 +54,12 @@ body{
 
             a{
                 text-decoration: none;
+                color: #314584;
             }
             
             &::after{
                 content: ".";
+                color: #314584;
             }
             &:hover{
                 transform: rotate(360deg) scale(1.8) translateY(-1px);
@@ -67,6 +69,13 @@ body{
             a::selection{
                 background-color: black;
                 color: white;
+            }
+            a:link{
+                color: #314584;
+            }
+            a:active{
+                color: initial;
+                background-color: initial;
             }
         }
     }
@@ -589,16 +598,26 @@ body{
                 color: #324584;
             }
         }
-        ul{
-            display: inline-flex;
-            justify-content: space-between;
-            margin: 10px;
-
+        .ul_footer_link{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            
+            
             li{
+    
+                margin: 10px;
+                list-style-type: none;
+                
                 a{
                     text-decoration: none;
+                    transition: 1s;
                     color: white;
                     
+                    &:after{
+                        content: "";
+                    }
                     &:active{
                         color: white;
                     }
@@ -608,14 +627,39 @@ body{
                     &:visited{
                         color: white;
                     }
+                    &:hover{
+                        transform: scale(1.4);
+                    }
+                }
+            }
+    
+        }
+        .ul_icon_link{
+            display: inline-flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            margin: 10px;
+
+
+            li{
+                transition: 1s;
+                list-style-type: none;
+                margin: 0 20px;
+
+                a{
+                    text-decoration: none;
+                    transition: 1s;
+                    color: white;
                     
                 }
-                &:hover{
+                .facebook:hover{
                     transform: scale(1.4);
                 }
-                
-                &:after{
-                    content: '';
+                .twitter:hover{
+                    transform: scale(1.4) rotate(360deg);
+                }
+                .dribble:hover{
+                    transform: scale(1.4) rotate3d(5, 5, 5, 45deg);
                 }
             }
         }
